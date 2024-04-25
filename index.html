@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecomotion Journey</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        a{
+            font-size: 25px;
+            font-weight: bold;
+            color: rgb(255, 162, 162);
+        }
+        nav ul li a {
+        text-decoration: none;
+        display: inline-block;
+        color: #333;
+        font-weight: bold;
+        transition: transform  0.3s ease;
+        }
+
+    nav ul li a:hover {
+      color: #ff5733; /* Change to your desired hover color */
+      transform: scale(1.1); 
+    }
+
+    .para{
+        color: rgb(0, 0, 0);
+        height: auto;
+        width: 75%;
+        margin-left: 28px;
+
+    }
+/* visitor css */
+    .visitor-count {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-left: 20px;
+
+  }
+
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ecomotion Journey: Empowering Sustainable Mobility for a Greener Future!</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Green_transpotartion/car-pooling.html">Car-pooling</a></li>
+            <li><a href="E-vehicle/e-vehicle.html">E-Vehicle</a></li>
+            <li><a href="Cycling/Cycling.html">Cycling</a></li>
+            <li><a href="Renewable/Renewable.html">Renewable Energy</a></li>
+            <li><a href="Blog/blog.html">Blog/News</a></li>
+            
+        </ul>
+    </nav>
+        <h2 class="welcome">Welcome to Ecomotion!</h2>
+        <div class="para"><p>Discover a greener way to move with Ecomotion, your gateway to eco-friendly transportation solutions. Say goodbye to harmful emissions and hello to a cleaner, healthier planet.</p>
+
+          <p>Explore electric vehicles, embrace public transportation, and pedal your way to sustainability with our cycling options. Join us in reducing our carbon footprint, one ride at a time.</p>
+        </div>
+    </section>
+    <section id="services">
+        <h2 class="welcome">How To Create Green Future </h2>
+        <ul>
+            <li>Green Transportation</li>
+            <li>Electric Vehicles</li>
+            <li>Car Pooling</li>
+            <li>Renewable Energy Transport</li>
+            <li>Cycling</li>
+        </ul>
+    </section>
+
+
+    <!--  visitor Count-->
+
+    <div class="container">
+        <h1 class="text-center">Daily Visitor Count</h1>
+        <div class="visitor-count text-center">Loading...</div>
+      </div>
+      
+      <!-- Bootstrap JS (optional) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      
+      <!-- JavaScript to update visitor count -->
+      <script>
+        // Simulate fetching visitor count from a server
+        function fetchVisitorCount() {
+          // Replace this with your actual code to fetch the visitor count from a server/database
+          return Math.floor(Math.random() * 1000); // Sample data (random number)
+        }
+      
+        // Function to update the visitor count on the webpage
+        function updateVisitorCount() {
+          var count = fetchVisitorCount();
+          $('.visitor-count').text('Daily Visitors: ' + count);
+        }
+      
+        // Update visitor count initially and every 5 seconds
+        updateVisitorCount();
+        setInterval(updateVisitorCount, 15000); // Update every 5 seconds
+      </script>
+
+
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or suggestions, please contact us at: <a href="mailto:info@ecomotion123
+            .com">info@carpoolinfo.com</a></p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi laboriosam a esse praesentium perferendis nihil nesciunt, voluptas error libero iste, fugit assumenda similique sunt aspernatur architecto iusto aut voluptates minus?
+    </section>
+    <footer class="foot">
+        <p>@copy; 2024 Ecomotion Journey. All rights reserved.</p>
+    </footer>
+</body>
+</html>
